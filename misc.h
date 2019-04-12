@@ -2,7 +2,12 @@
 #define MISC
 
 // #include <string>
-
+#ifdef ARDUINO
+#else
+#include <string>
+#include <vector>
+using namespace std;
+#endif
 
 template<typename T>
 T clamp(T v, T l, T h) {
