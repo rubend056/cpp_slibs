@@ -1,6 +1,7 @@
 #include "browser.h"
 
 
+// using namespace fs;
 bool Browser::is_directory(){return directory;}
 bool Browser::is_valid(){return availables.size()>0 && file_count < availables.size() && file_count >= 0;}
 

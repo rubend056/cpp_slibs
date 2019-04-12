@@ -2,6 +2,9 @@
 #define BROWSER
 
 #include "misc.h"
+#include "boost_misc.h"
+#include <boost/filesystem.hpp>
+#include <boost/format.hpp>
 
 namespace fs = boost::filesystem;
 using namespace std;
