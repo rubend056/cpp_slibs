@@ -1,4 +1,4 @@
-add_library(common
+add_library(standard_libs
 	misc.cpp
     arg_helper.cpp
     browser.cpp
