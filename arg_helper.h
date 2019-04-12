@@ -1,7 +1,12 @@
 #ifndef ARG_HELPER
 #define ARG_HELPER
 
+#ifdef ARDUINO
+#include <string.h>
+#else
 #include <string>
+
+
 
 extern int c_arg;
 
@@ -13,5 +18,10 @@ void setArgs(int argc, char** argv);
 
 // YOU NEED TO IMPLEMENT THIS
 void usage(const char* comm);
+
+
+#endif
+
+
 
 #endif

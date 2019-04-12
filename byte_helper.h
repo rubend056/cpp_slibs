@@ -2,7 +2,8 @@
 #define BYTE_HELPER
 
 #ifdef ARDUINO
-#include <string>
+#include <Arduino.h>
+#include <string.h>
 #else
 #include <cstring>
 #include <iostream>
@@ -56,7 +57,7 @@ template<typename T>
 T ByteReceiver::get(){
 	if(sizeof (T) > m-c){ // Checks if we have enough space in buffer
     #ifdef ARDUINO
-        Serial.println(S("Byte reciver cannot output"));
+        Serial.println(F("Byte reciver cannot output"));
     #else
 		std::cout << "Byte reciver cannot output"<< std::endl;
     #endif

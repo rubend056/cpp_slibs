@@ -1,5 +1,6 @@
 #include "arg_helper.h"
 
+#ifndef ARDUINO
 using namespace std;
 
 int arg_c;
@@ -25,3 +26,5 @@ void setArgs(int argc, char** argv){
 	arg_c = argc;
 	arg_v = argv;
 }
+
+#endif
